@@ -14,6 +14,12 @@ Real assets produced by this skill for a Clearwater Beach, FL beachfront estate
 - `video/tour-hero-cinematic.mp4`     — Veo 3.1 twilight push-in (with audio, 8s)
 - `video/tour-vertical-reel.mp4`      — 9:16 UGC reel
 
+## UGC apartment variant (regular listing)
+- `video/ugc-apartment-tour.mp4` — vertical "me showing the apartment" tour (a $4,295 East
+  Village 1BR), the host walking each room casually for Reels/TikTok
+- `img/ugc-host-living.jpg`, `img/ugc-host-kitchen.jpg` — the host composited into the real
+  apartment rooms, 9:16
+
 ## Copy / data
 - `copy.md`, `listing.json` — the copy deck + structured data for this property
 

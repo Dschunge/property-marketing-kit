@@ -47,6 +47,18 @@ Normalize all clips to the same size/fps and concat with ffmpeg (see `video-stit
 Result: `host-tour-<name>.mp4` — the presenter walking the buyer/guest through the home. Also
 keep a 9:16 cut for Reels/TikTok.
 
+## Variant — UGC vertical apartment tour (the "me showing the apartment" format)
+For regular listings (a normal apartment, not a luxury estate), do the whole thing **vertical and
+casual** — it's the format that performs on social:
+- Composite the host in **9:16** from the start, prompting a **casual outfit** (t-shirt) and
+  candid "come see my apartment" energy, not a polished agent in a blazer.
+- For the opener, use `veo3_1` 9:16 **with a spoken line** in the prompt's AUDIO block (e.g.
+  *"Okay, so check out this East Village one-bed — look at these floors and the exposed brick"*) —
+  Veo will lip-sync a natural voice. Use `cinematic_studio_video_v2` 9:16 for the other rooms.
+- Stitch to a 1080×1920 `ugc-apartment-tour.mp4` (~20–25s). Pair with the hook lines, per-room
+  voiceover, and on-screen text overlays in `05-marketing-copy/copy.md`.
+A real example (a $4,295 East Village 1BR) ships in `assets/sample-kit/video/ugc-apartment-tour.mp4`.
+
 ## Honesty
 This is an AI rendering of a real person composited into real photos. Use only with the
 person's consent (it's the user themselves, or someone who approved it). Keep the AI-asset

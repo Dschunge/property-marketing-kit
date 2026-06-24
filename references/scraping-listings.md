@@ -42,6 +42,18 @@ between `/upload/` and `/v…/`. Swap `h_240`/`s--xxx--` for `q_auto,w_1920` to 
 `…/image/upload/q_auto,w_1920/v1/<path>.jpg`. Other CDNs: strip width/height query params or
 size suffixes (`_min`, `=s320`, `/240x180/`).
 
+### Hotlink-protected image CDNs (e.g. RentHop `photos.renthop.com`)
+Some CDNs return **403 to any direct fetch** — `curl`, Firecrawl, even Higgsfield's
+`media_import_url` — and only serve the bytes to the rendered page (token/referer/cookie gate).
+In-page `fetch()` is also CORS-blocked. Capture them by **rendering, then screenshotting**:
+1. In the headless browser, build a clean page that stacks the full-res `<img>`s (the browser
+   loads them with the right session): `document.body.innerHTML = '<div>'+imgs+'</div>'`, each at
+   a fixed width; wait for `onload`; return each image's `y`/`height`.
+2. `browser_resize` to the image width, take a **full-page screenshot**.
+3. `ffmpeg -vf "crop=W:H:0:Y"` each region out into `room-NN.jpg`.
+Then, because the originals aren't URL-fetchable, push the local crops into Higgsfield with
+**`media_upload` → PUT bytes → `media_confirm`** (not `media_import_url`) to get `media_id`s.
+
 ## ⚠️ Provenance check — do this every time
 Listing pages embed "similar listings", featured carousels, and lazy-load neighboring
 properties' photos into the same DOM/CDN folder. **Not every harvested image is the target
