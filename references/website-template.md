@@ -21,12 +21,22 @@ inline CSS, vanilla JS). A finished render of it lives at the sample kit's sourc
    with the enhanced photo as its poster, the gallery hovers, and mobile collapses cleanly.
 5. **Leave the footer AI-asset disclosure in place.**
 
-## Design notes (already in the template)
-- Coastal luxury palette, `Cormorant Garamond` display + `Inter` body.
-- Fixed nav turns opaque on scroll; hero = full-bleed muted autoplay tour video.
-- Sections: hero · story · outdoor split · stats strip · interior split · gallery (mosaic) ·
-  vertical reel · amenities · CTA · footer.
-- Fully responsive at 880px.
+## Design notes (already in the template) — cinematic, scroll-driven
+- Editorial/architectural palette (warm sand + ink + oak accent), `Fraunces` italic display +
+  `Inter` UI. Fixed brand topbar (mix-blend over media), top scroll-progress bar, side-dot nav.
+- **The signature section is `.film`** — a sticky full-viewport media that **crossfades between
+  rooms** as you scroll, while floating **glass spec-cards** and big italic captions advance per
+  "act" (Arrival → Living → Water → Golden Hour). An IntersectionObserver (`rootMargin:-48%`)
+  activates the matching `.film__layer` + `.step.on` card + updates the act label/caption. This
+  is what makes the site *immediately, unmistakably about the property* — each scroll beat is a
+  different real room with its own specs.
+- To retarget: keep the **same number** of `.film__layer` images and `.step` blocks (4), and
+  swap each layer's image + its step's `data-i/data-act/data-cap` and card specs together.
+- Sections: HERO (video) · `.film` scrollytelling acts · HOST split (tour video + minis) ·
+  GALLERY mosaic · "dossier" facts sheet + amenities · CTA · footer. Responsive at 820px.
+- **Verify by scrolling**, not just loading: screenshot the hero and each act depth (the sticky
+  crossfade only shows under real scroll). A live render of this template ships as the Clearwater
+  site in the sample kit's source listing.
 
 ## Deploying (optional)
 If the user wants it live, it's static — any of: drag the `04-website/` folder to Netlify
