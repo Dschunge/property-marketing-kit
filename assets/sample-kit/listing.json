@@ -1,0 +1,48 @@
+{
+  "source": {
+    "platform": "Home Team Luxury Rentals (Guesty booking engine)",
+    "url": "https://hometeamvr.guestybookings.com/en/properties/69f90adce4271300112f5e5e",
+    "scraped_at": "2026-06-23",
+    "listing_id": "69f90adce4271300112f5e5e"
+  },
+  "property": {
+    "name": "Award-winning Private Beach & Breathtaking Sunsets",
+    "tagline": "Direct beachfront luxury on North Clearwater Beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "neighborhood": "Carlouel (gated community)",
+    "type": "Single-family vacation rental estate",
+    "bedrooms": 5,
+    "bathrooms": 3,
+    "sleeps": 16,
+    "private_gulf_frontage_ft": 90,
+    "view": "180-degree Gulf of Mexico, sunset-facing"
+  },
+  "highlights": [
+    "Direct, private beachfront — not beach access — with a residents-only path to your own stretch of sand",
+    "Over 90 ft of exclusive Gulf frontage with sweeping 180° views and nightly sunsets",
+    "Heated private pool with pool volleyball & basketball",
+    "Beachfront firepit lounge",
+    "Putting green, ping pong, Connect 4 & board games",
+    "Fully renovated top-to-bottom: new tile, fixtures, baths, appliances, coastal furnishings",
+    "Screened patio with outdoor dining, BBQ grill, and string-lit ceilings",
+    "Gated, upscale Carlouel community — 1.5 miles from the pier, restaurants & attractions",
+    "Family/kid friendly, dedicated workspace, washer & dryer, fully stocked kitchen"
+  ],
+  "photos": {
+    "01-photo.jpg": "Aerial at sunset — house, private beach and Gulf (front/street side)",
+    "02-photo.jpg": "Top-down aerial — pool, firepit and beach lot layout",
+    "03-photo.jpg": "Pool deck at sunset — Gulf view, pool volleyball/basketball",
+    "04-photo.jpg": "Rear exterior aerial (day) — house, pool, screened patio",
+    "05-photo.jpg": "Beachfront firepit circle at dusk with the home lit behind",
+    "06-photo.jpg": "Backyard putting green framed by palms",
+    "07-photo.jpg": "Interior great/game room — sectional, bean bags, French doors to pool",
+    "08-photo.jpg": "Aerial location context on Clearwater Beach (home pinned)",
+    "09-photo.jpg": "Family enjoying the heated pool (lifestyle)",
+    "10-photo.jpg": "Rear exterior at twilight, pink sky — primary hero",
+    "11-photo.jpg": "Family on the covered patio at sunset overlooking pool & beach — top lifestyle",
+    "12-photo.jpg": "Covered patio dining at sunset with grill and Gulf view",
+    "13-photo.jpg": "Wide Gulf beach sunset (drone)",
+    "14-photo.jpg": "Golden Gulf sunset, waves on the sand"
+  }
+}

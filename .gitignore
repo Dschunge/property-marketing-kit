@@ -1,0 +1,13 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Scratch / working output (kits are generated, not committed)
+property-marketing-kits/
+*.tmp
+.playwright-mcp/
+
+# Keep the curated sample assets in assets/sample-kit/ (they ARE committed)
+# but ignore any large raw working files dropped at repo root
+/tmp-*
