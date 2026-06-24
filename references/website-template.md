@@ -1,8 +1,17 @@
 # Building the property website
 
-A polished single-page site is the centerpiece of the kit. Use
-`assets/website-template.html` — a self-contained, dependency-light template (Google Fonts +
-inline CSS, vanilla JS). A finished render of it lives at the sample kit's source listing.
+A polished single-page site is the centerpiece of the kit — **one site per property, in that
+property's own `04-website/` folder.** Two ready styles ship; pick by property type:
+
+| Style | File | Use for | Signature |
+|---|---|---|---|
+| **Cinematic estate** | `assets/website-template.html` | luxury homes / estates | full-bleed video hero → sticky media that crossfades room-to-room with floating spec-cards per "act" |
+| **UGC microsite** | `assets/website-template-ugc.html` | regular apartments / rentals | phone-frame 9:16 UGC tour in the hero + room cards that flip to "you in the room" on hover; mono/urban type |
+
+Both are self-contained (Google Fonts + inline CSS, vanilla JS). Finished renders of each live in
+the sample kits (Clearwater estate / East Village apartment). The steps below describe the estate
+style; the UGC microsite swaps the same way (its top-comment lists the fields). **Never reuse one
+property's site for another — give each its own.**
 
 ## Steps
 1. Copy `assets/website-template.html` → `04-website/index.html`.
